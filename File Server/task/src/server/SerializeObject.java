@@ -47,7 +47,6 @@ public class SerializeObject {
                 try (OutputStream out = new BufferedOutputStream(Files.newOutputStream(Path.of(String.valueOf(newFile))))) {
                     out.write(msg.content, 0, msg.content.length);
                 } catch (IOException e) {
-                    //System.out.println("Cannot save file: " + e.getMessage());
                     return false;
                 }
             }
